@@ -12,5 +12,8 @@ for question in question_data:
 quiz = QuizBrain(question_bank)
 quiz.next_question()
 
-while
+while quiz.still_has_question():
     quiz.next_question()
+
+print(f"Odpowiedziałeś już na wszystkie pytania")
+print(f"Zdobyłeś: {quiz.score}/{quiz.question_number} punktów.")
